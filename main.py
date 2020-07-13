@@ -3,17 +3,26 @@
 	arrancar nuestra aplicacion
 '''
 # Importamos los recursos a ulitilizar
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
+from incidencias import incidencias
 
 # Intanciamos el objeto Flask
 app = Flask(__name__)
 
-# Pantalla principal al iniciar nuestra aplicacion
-@app.route("/")
-def Index():
+@app.route("/incidencias")
+def getIncidencias():
+	return jsonify({"Incidencias": incidencias})
 
-	return ""
-
+@app.route("/incidencias", methods=["POST"])
+def addIncidencia():
+	new_incidencia = {
+		"fecha": request.json["fecha"],
+		"titulo": request.json["titulo"],
+		"descripcion": request.json["descripcion"],
+		"agente": request.json["agente"]
+	}
+	incidencias.append(new_incidencia)
+	return jsonify({"mensaje": "nueva incidencia agregada", "Incidencias": incidencias})
 
 if __name__ == "__main__":
 	app.run(port=5000, debug=True)
