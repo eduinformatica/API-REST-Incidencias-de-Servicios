@@ -35,7 +35,7 @@ local esta aplicacion.
 1. Creamos un directorio en el escritorio con el nombre "API-REST-Incidencias-de-Servicios".
 2. Dentro del direcctorio ejcutamos el archivo principal main.py en la que se encarga de iniciar <br /> 
 nuestra aplicacion en el puerto 5000.
-3. Al arrancar la aplicacion escribimos el siguiente link: http://localhost:5000/incidencias.
+3. Al arrancar la aplicacion escribimos el siguiente link: http://localhost:5000/incidents.
 4. Como paso final podemos testear agregando una nueva incidencia en formato JSON (JavaScript Object Notation).
 
 ## Postman
