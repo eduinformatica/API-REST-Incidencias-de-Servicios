@@ -37,3 +37,7 @@ local esta aplicacion.
 nuestra aplicacion en el puerto 5000.
 3. Al arrancar la aplicacion escribimos el siguiente link: http://localhost:5000/incidencias.
 4. Como paso final podemos testear agregando una nueva incidencia en formato JSON (JavaScript Object Notation).
+
+## Postman
+
+[Documentacion de Postman](https://info-developer.postman.co/collections/12074220-0cd59dd3-490d-4ae0-9c86-5d08a03d1d5e?version=latest&workspace=574f1914-d365-49d7-8493-ffa8ac41171c)
